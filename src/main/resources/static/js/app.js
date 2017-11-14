@@ -12,9 +12,13 @@ app.config(function($routeProvider, $locationProvider){
                     controller: 'calculatorController'
                 })
         .when('/toOnpConverter',{
-                            templateUrl: 'static/view/toOnpConverter.html',
-                            controller: 'toOnpConverterController'
-                        })
+                    templateUrl: 'static/view/toOnpConverter.html',
+                    controller: 'toOnpConverterController'
+                })
+        .when('/sort',{
+                    templateUrl: 'static/view/sort.html',
+                    controller: 'sortController'
+                })
         .otherwise(
             { redirectTo: '/home'}
         );

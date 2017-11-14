@@ -1,0 +1,30 @@
+<div class="container text-center">
+    <div class="row">
+        <div class="col">
+            <textarea ng-model="arrayToSort" rows="4" cols="60"></textarea>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4">
+        </div>
+        <div class="col-sm-4">
+            <div class="col-sm-4">
+                <input type="submit" value="bubble" ng-click="sort('bubble');">
+            </div>
+            <div class="col-sm-4">
+                <input type="submit" value="quick" ng-click="sort('quick');">
+            </div>
+            <div class="col-sm-4">
+                <input type="submit" value="insertion" ng-click="sort('insertion');">
+            </div>
+        </div>
+        <div class="col-sm-4">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <textarea ng-bind="result" rows="4" cols="60"></textarea>
+            <div ng-bind="time"></div>
+        </div>
+    </div>
+</div>
