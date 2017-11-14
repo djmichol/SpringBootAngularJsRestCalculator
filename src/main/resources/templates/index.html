@@ -12,17 +12,12 @@
         <script type="text/javascript" th:src="@{/static/js/app.js}"></script>
         <script type="text/javascript" th:src="@{/static/js/controllers/calculatorController.js}"></script>
         <script type="text/javascript" th:src="@{/static/js/controllers/homeController.js}"></script>
+        <script type="text/javascript" th:src="@{/static/js/controllers/navbarController.js}"></script>
+        <script type="text/javascript" th:src="@{/static/js/directives/navbarDirective.js}"></script>
+        <script type="text/javascript" th:src="@{/static/js/controllers/toOnpConverterController.js}"></script>
     </head>
     <body>
-        <nav class="navbar navbar-inverse custom-navbar">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="home">Calculator</a>
-            </div>
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="home">Home</a></li>
-                <li><a href="calculator">Calculator</a></li>
-            </ul>
-        </nav>
+        <navbar-directive></navbar-directive>
         <div ng-view></div>
     </body>
 </html>

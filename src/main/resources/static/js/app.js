@@ -11,6 +11,10 @@ app.config(function($routeProvider, $locationProvider){
                     templateUrl: 'static/view/calculator.html',
                     controller: 'calculatorController'
                 })
+        .when('/toOnpConverter',{
+                            templateUrl: 'static/view/toOnpConverter.html',
+                            controller: 'toOnpConverterController'
+                        })
         .otherwise(
             { redirectTo: '/home'}
         );

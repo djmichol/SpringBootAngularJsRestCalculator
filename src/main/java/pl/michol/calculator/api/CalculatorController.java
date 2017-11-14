@@ -24,4 +24,8 @@ public class CalculatorController {
         return "index";
     }
 
+    @RequestMapping(value="/toOnpConverter")
+    public String onpConverter() {
+        return "index";
+    }
 }
