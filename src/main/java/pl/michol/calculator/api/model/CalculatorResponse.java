@@ -18,6 +18,9 @@ public class CalculatorResponse implements Serializable{
         this.result = result;
     }
 
+    public CalculatorResponse() {
+    }
+
     @Override
     public String toString() {
         return "CalculatorResponse{" +

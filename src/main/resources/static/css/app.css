@@ -1,21 +1,5 @@
-/* Basic reset */
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-
-	/* Better text styling */
-	font: bold 14px Arial, sans-serif;
-}
-
-/* Finally adding some IE9 fallbacks for gradients to finish things up */
-
-/* A nice BG gradient */
-html {
-	height: 100%;
-	background: white;
-	background: radial-gradient(circle, #fff 20%, #ccc);
-	background-size: cover;
+.custom-navbar{
+    border-radius: 0px;
 }
 
 /* Using box shadows to create 3D effects */

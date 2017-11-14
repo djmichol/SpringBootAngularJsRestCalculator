@@ -27,7 +27,7 @@ public class CalculatorApi {
 
     @PostMapping
     public Mono<CalculatorResponse> calculate(@RequestBody CalculatorRequest calculatorRequest) {
-        String insertSpaces = calculatorRequest.getOperation().replaceAll("[/*\\-+%^]", " $0 ").replaceAll("\\s+", " ");
+        String insertSpaces = calculatorRequest.getOperation().replaceAll("[/*\\-+%^()]", " $0 ").replaceAll("\\s+", " ");
         String onpInput = infixToOnpConverter.convert(insertSpaces);
         Double result = onpCalculator.calculate(onpInput);
         CalculatorResponse calculatorResponse = new CalculatorResponse(result);
